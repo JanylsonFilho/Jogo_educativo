@@ -1,0 +1,126 @@
+[gd_scene load_steps=6 format=3 uid="uid://b86qrrwce5ph"]
+
+[ext_resource type="Script" path="res://Controles.gd" id="1_jfx2u"]
+[ext_resource type="Texture2D" uid="uid://dvp4oyvq1ik6l" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/telainicial.jpg" id="2_n8l2n"]
+[ext_resource type="FontFile" uid="uid://bp6b0khbkdy4w" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/kenney_kenney-fonts/Fonts/Kenney Future.ttf" id="3_oky83"]
+[ext_resource type="Texture2D" uid="uid://bfov6fildrw24" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/textbox/3DS - Dillons Rolling Western - Textbox (1).png" id="4_al3qv"]
+[ext_resource type="Texture2D" uid="uid://bfv7oh5w55x1t" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-idle-01.png" id="5_c7n0a"]
+
+[node name="Controles" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = 3.0
+offset_right = -2.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jfx2u")
+
+[node name="Telainicial" type="Sprite2D" parent="."]
+position = Vector2(570, 313)
+scale = Vector2(1.6087, 1.93478)
+texture = ExtResource("2_n8l2n")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Telainicial"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -191.0
+offset_top = -213.0
+offset_right = -21.0
+offset_bottom = -184.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Voltar" type="Button" parent="Telainicial/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_oky83")
+theme_override_font_sizes/font_size = 18
+text = "Voltar"
+
+[node name="3ds-DillonsRollingWestern-Textbox(1)" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(594.125, 361)
+scale = Vector2(3.40527, 2.96094)
+texture = ExtResource("4_al3qv")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 294.0
+offset_right = 416.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0.964706, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_oky83")
+theme_override_font_sizes/font_size = 20
+text = "A - Vermelho "
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 337.0
+offset_right = 496.0
+offset_bottom = 386.0
+theme_override_colors/font_color = Color(0.2, 0.470588, 0.243137, 1)
+theme_override_fonts/font = ExtResource("3_oky83")
+theme_override_font_sizes/font_size = 20
+text = "B - Verde
+ "
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 379.0
+offset_right = 417.0
+offset_bottom = 402.0
+theme_override_colors/font_color = Color(0.964706, 0.780392, 0, 1)
+theme_override_fonts/font = ExtResource("3_oky83")
+theme_override_font_sizes/font_size = 20
+text = "C - Amarelo "
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 418.0
+offset_right = 418.0
+offset_bottom = 441.0
+theme_override_colors/font_color = Color(0.133333, 0.52549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("3_oky83")
+theme_override_font_sizes/font_size = 20
+text = "D - Azul"
+
+[node name="3ds-DillonsRollingWestern-Textbox(1)2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(597.781, 119)
+scale = Vector2(3.3689, 2.85352)
+texture = ExtResource("4_al3qv")
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 44.0
+offset_right = 2404.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_oky83")
+text = "Olá , aqui você vai  encontra as instruções de 
+controle. Você vai utilizar as teclas  A, B , C e D 
+ou o controle, de acordo com as cores abaixo ,
+para responder as questões do jogo, e nos 
+botões restantes, irá utilizar o mouse .
+Divirta-se!!!"
+
+[node name="Adventurer-idle-02" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(923, 111)
+scale = Vector2(5.34, 5.26668)
+texture = ExtResource("5_c7n0a")
+
+[connection signal="pressed" from="Telainicial/VBoxContainer/Voltar" to="." method="_on_voltar_pressed"]

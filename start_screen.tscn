@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdnx83c3deoad"]
+
+[ext_resource type="Script" path="res://Scripts/start_screen.gd" id="1_m20dl"]
+[ext_resource type="Texture2D" uid="uid://dvp4oyvq1ik6l" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/telainicial.jpg" id="2_87ri6"]
+[ext_resource type="FontFile" uid="uid://bp6b0khbkdy4w" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/kenney_kenney-fonts/Fonts/Kenney Future.ttf" id="3_s3mvd"]
+[ext_resource type="Texture2D" uid="uid://uyfpyffh6m4m" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/Design_sem_nome-removebg-preview.png" id="4_sr1n2"]
+[ext_resource type="AudioStream" uid="uid://cm6vc4qkysi3i" path="res://sounds/566208__awazixosh__its-time-for-an-adventure.wav" id="5_auvie"]
+
+[node name="startScreen" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m20dl")
+
+[node name="Telainicial" type="Sprite2D" parent="."]
+position = Vector2(580, 333)
+scale = Vector2(1.56522, 1.89855)
+texture = ExtResource("2_87ri6")
+
+[node name="controls" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -118.5
+offset_top = -221.0
+offset_right = 125.5
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="startBtn" type="Button" parent="controls"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0.945098, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_s3mvd")
+theme_override_font_sizes/font_size = 35
+text = "Iniciar"
+
+[node name="controlsBtn" type="Button" parent="controls"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0.945098, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_s3mvd")
+theme_override_font_sizes/font_size = 35
+text = "Controles"
+
+[node name="quitBtn" type="Button" parent="controls"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0.945098, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_s3mvd")
+theme_override_font_sizes/font_size = 35
+text = "Sair do jogo"
+
+[node name="DesignSemNome-removebg-preview" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(571, 219.5)
+scale = Vector2(1.724, 1.37)
+texture = ExtResource("4_sr1n2")
+
+[node name="musica_defundo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_auvie")
+volume_db = -20.0
+autoplay = true
+
+[connection signal="pressed" from="controls/startBtn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="controls/controlsBtn" to="." method="_on_controls_btn_pressed"]
+[connection signal="pressed" from="controls/quitBtn" to="." method="_on_quit_btn_pressed"]

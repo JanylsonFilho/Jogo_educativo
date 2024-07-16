@@ -1,0 +1,231 @@
+[gd_scene load_steps=31 format=3 uid="uid://8wqc00762x0b"]
+
+[ext_resource type="Texture2D" uid="uid://bxtbrtlro1goe" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-idle-00.png" id="2_6ncfi"]
+[ext_resource type="Texture2D" uid="uid://b7qq5uwdwr05o" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-attack1-00.png" id="2_v2562"]
+[ext_resource type="Texture2D" uid="uid://bfv7oh5w55x1t" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-idle-01.png" id="3_5q5oa"]
+[ext_resource type="Texture2D" uid="uid://c0bkyquvf6yya" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png" id="3_owxwp"]
+[ext_resource type="Texture2D" uid="uid://bevtobkh4h31x" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-attack1-01.png" id="3_qy7ak"]
+[ext_resource type="Texture2D" uid="uid://co7q2uqwg0swr" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-attack1-02.png" id="4_3ikw6"]
+[ext_resource type="Texture2D" uid="uid://nmnp7frke3xh" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png" id="4_enjbu"]
+[ext_resource type="Texture2D" uid="uid://by8gydofnxe2i" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-attack1-03.png" id="5_c6vpp"]
+[ext_resource type="Texture2D" uid="uid://d3067c1fc3dvt" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png" id="5_rixi5"]
+[ext_resource type="Texture2D" uid="uid://v81kerg1p6hy" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png" id="6_48fad"]
+[ext_resource type="Texture2D" uid="uid://cqiggxarg07og" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-attack1-04.png" id="6_ntpvw"]
+[ext_resource type="Texture2D" uid="uid://yakmt7euhrhr" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_6.png" id="7_nsb1k"]
+[ext_resource type="Texture2D" uid="uid://boy323cus5xns" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_7.png" id="8_878lk"]
+[ext_resource type="Texture2D" uid="uid://stn2i6ij1afw" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_1.png" id="9_8j75d"]
+[ext_resource type="Texture2D" uid="uid://c3l5sb6kxxa1i" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_8.png" id="9_bkrvm"]
+[ext_resource type="Texture2D" uid="uid://bs8o0m1xp5ian" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_5.png" id="10_8kfyh"]
+[ext_resource type="Texture2D" uid="uid://bms1mgooyapdb" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_2.png" id="10_t8y4j"]
+[ext_resource type="Texture2D" uid="uid://0wle7p0cw0m1" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_3.png" id="11_w0gob"]
+[ext_resource type="Texture2D" uid="uid://cwl2e5ioobo51" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_4.png" id="12_ku6m3"]
+[ext_resource type="Texture2D" uid="uid://o8tas1f84jj7" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_5.png" id="13_uocx3"]
+[ext_resource type="Texture2D" uid="uid://b1dklko3pbyr2" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_6.png" id="14_5q0ty"]
+[ext_resource type="Texture2D" uid="uid://bygt3ka1xnusi" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_7.png" id="15_eweys"]
+[ext_resource type="Texture2D" uid="uid://du07ptsxaolme" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_8.png" id="16_to844"]
+[ext_resource type="Texture2D" uid="uid://wyiahpbiwujn" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_9.png" id="17_b0f7l"]
+[ext_resource type="Texture2D" uid="uid://dvhn2o6asyu4i" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_10.png" id="18_asu5e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qi2uw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v2562")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qy7ak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3ikw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_c6vpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ntpvw")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6ncfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5q5oa")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_crrnc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_8j75d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_t8y4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_w0gob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ku6m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_uocx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5q0ty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_eweys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_to844")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_b0f7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_asu5e")
+}],
+"loop": true,
+"name": &"death",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_owxwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_enjbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rixi5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_48fad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8kfyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nsb1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_878lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bkrvm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_0jo8f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(318, 234)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_v2562")]
+}
+
+[sub_resource type="Animation" id="Animation_0wh02"]
+resource_name = "attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(318, 234), Vector2(912, 222), Vector2(305, 235)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_v2562"), ExtResource("4_3ikw6"), ExtResource("2_v2562")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ty21l"]
+_data = {
+"RESET": SubResource("Animation_0jo8f"),
+"attack": SubResource("Animation_0wh02")
+}
+
+[node name="Players3" type="CharacterBody2D"]
+disable_mode = 1
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(725, 48)
+scale = Vector2(3, 3)
+texture = ExtResource("3_owxwp")
+centered = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(318, 234)
+scale = Vector2(5.01127, 4.98712)
+texture = ExtResource("2_v2562")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(320, 230)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_qi2uw")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.190643
+speed_scale = 0.2
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(885, 180)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_crrnc")
+animation = &"death"
+autoplay = "idle"
+frame_progress = 0.49935
+speed_scale = 0.5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ty21l")
+}

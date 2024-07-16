@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=3 uid="uid://dm7t5y8mfvej8"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_l0wvd"]
+[ext_resource type="Texture2D" uid="uid://dvp4oyvq1ik6l" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/telainicial.jpg" id="2_nsbbk"]
+[ext_resource type="FontFile" uid="uid://bp6b0khbkdy4w" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/kenney_kenney-fonts/Fonts/Kenney Future.ttf" id="3_mwice"]
+[ext_resource type="Texture2D" uid="uid://bfov6fildrw24" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/textbox/3DS - Dillons Rolling Western - Textbox (1).png" id="4_evum2"]
+[ext_resource type="Texture2D" uid="uid://c0bkyquvf6yya" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png" id="5_0osd8"]
+
+[node name="game over" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l0wvd")
+
+[node name="Telainicial" type="Sprite2D" parent="."]
+position = Vector2(576, 332)
+scale = Vector2(1.56522, 1.89855)
+texture = ExtResource("2_nsbbk")
+
+[node name="controls" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -260.5
+offset_top = -195.0
+offset_right = 171.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="tente_novamente" type="Button" parent="controls"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0.945098, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mwice")
+theme_override_font_sizes/font_size = 35
+text = "tente novamente"
+
+[node name="3ds-DillonsRollingWestern-Textbox(1)" type="Sprite2D" parent="."]
+position = Vector2(536, 241)
+scale = Vector2(3.20898, 1.92187)
+texture = ExtResource("4_evum2")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 220.0
+offset_right = 672.0
+offset_bottom = 274.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_mwice")
+theme_override_font_sizes/font_size = 30
+text = "Que pena, você perdeu!"
+
+[node name="Bringer-of-deathIdle1" type="Sprite2D" parent="."]
+position = Vector2(766, 210)
+scale = Vector2(2.13571, 1.87097)
+texture = ExtResource("5_0osd8")
+
+[connection signal="pressed" from="controls/tente_novamente" to="." method="_on_tente_novamente_pressed"]

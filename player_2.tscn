@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6g1ntj8axpcy"]
+
+[ext_resource type="Texture2D" uid="uid://drupot8csgvu6" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/kenney_toon-characters-1/Male person/PNG/Poses HD/character_malePerson_wide.png" id="1_gr26r"]
+[ext_resource type="Texture2D" uid="uid://bvnyoyox2dc0y" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/kenney_toon-characters-1/Robot/PNG/Poses HD/character_robot_think.png" id="2_4h5h3"]
+
+[node name="Player2" type="CharacterBody2D"]
+
+[node name="CharacterMalePersonWide" type="Sprite2D" parent="."]
+position = Vector2(302, 239)
+scale = Vector2(0.640625, 0.589844)
+texture = ExtResource("1_gr26r")
+
+[node name="CharacterRobotThink" type="Sprite2D" parent="."]
+position = Vector2(848, 240)
+scale = Vector2(0.598958, 0.609375)
+texture = ExtResource("2_4h5h3")

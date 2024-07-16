@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://clans72y04jj7"]
+
+[ext_resource type="Script" path="res://youwin.gd" id="1_1jglp"]
+[ext_resource type="Texture2D" uid="uid://dvp4oyvq1ik6l" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/telainicial.jpg" id="2_4kao3"]
+[ext_resource type="FontFile" uid="uid://bp6b0khbkdy4w" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/kenney_kenney-fonts/Fonts/Kenney Future.ttf" id="3_ylvom"]
+[ext_resource type="Texture2D" uid="uid://bfov6fildrw24" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/textbox/3DS - Dillons Rolling Western - Textbox (1).png" id="4_m1jdp"]
+[ext_resource type="Texture2D" uid="uid://bfv7oh5w55x1t" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-idle-01.png" id="5_ldcvm"]
+
+[node name="voce_venceu" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1jglp")
+
+[node name="Telainicial" type="Sprite2D" parent="."]
+position = Vector2(574, 335)
+scale = Vector2(1.56522, 1.89855)
+texture = ExtResource("2_4kao3")
+
+[node name="controls" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -260.5
+offset_top = -195.0
+offset_right = 171.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="retorne_menu" type="Button" parent="controls"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ylvom")
+theme_override_font_sizes/font_size = 35
+text = "volte ao menu "
+
+[node name="3ds-DillonsRollingWestern-Textbox(1)" type="Sprite2D" parent="."]
+position = Vector2(536, 241)
+scale = Vector2(3.20898, 1.92187)
+texture = ExtResource("4_m1jdp")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 219.0
+offset_right = 679.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ylvom")
+theme_override_font_sizes/font_size = 30
+text = "parabéns , você venceu!"
+
+[node name="Adventurer-idle-01" type="Sprite2D" parent="."]
+position = Vector2(840, 235)
+scale = Vector2(4.92, 3.70271)
+texture = ExtResource("5_ldcvm")
+
+[connection signal="pressed" from="controls/retorne_menu" to="." method="_on_retorne_menu_pressed"]

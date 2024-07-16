@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvsgr484w67mw"]
+
+[ext_resource type="Texture2D" uid="uid://vk3gteou6wkb" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/Jungle Asset Pack/Jungle Asset Pack/parallax background/ground.png" id="1_x5m6b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6mgm"]
+size = Vector2(2305, 94)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 552)
+texture = ExtResource("1_x5m6b")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1151.5, 600)
+shape = SubResource("RectangleShape2D_t6mgm")

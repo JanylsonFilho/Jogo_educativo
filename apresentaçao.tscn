@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2rd4ol784thw"]
+
+[ext_resource type="Script" path="res://apresentaçao.gd" id="1_54rmu"]
+[ext_resource type="Texture2D" uid="uid://dvp4oyvq1ik6l" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/telainicial.jpg" id="2_nwlhe"]
+[ext_resource type="FontFile" uid="uid://bp6b0khbkdy4w" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/kenney_kenney-fonts/Fonts/Kenney Future.ttf" id="3_2xnc5"]
+[ext_resource type="Texture2D" uid="uid://bfov6fildrw24" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/textbox/3DS - Dillons Rolling Western - Textbox (1).png" id="4_u5pl4"]
+[ext_resource type="Texture2D" uid="uid://bfv7oh5w55x1t" path="res://Assets_FDA-20240509T112455Z-001/Assets_FDA/assets 2/Individual Sprites/adventurer-idle-01.png" id="5_6wigs"]
+
+[node name="apresentaçao" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 2.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_54rmu")
+
+[node name="Telainicial" type="Sprite2D" parent="."]
+position = Vector2(574, 335)
+scale = Vector2(1.56522, 1.89855)
+texture = ExtResource("2_nwlhe")
+
+[node name="controls" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 166.5
+offset_top = -55.0
+offset_right = 562.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="proximapag" type="Button" parent="controls"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0.945098, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2xnc5")
+theme_override_font_sizes/font_size = 35
+text = "próxima página"
+
+[node name="3ds-DillonsRollingWestern-Textbox(1)" type="Sprite2D" parent="."]
+position = Vector2(517, 195.5)
+scale = Vector2(3.62109, 3.94531)
+texture = ExtResource("4_u5pl4")
+
+[node name="Adventurer-idle-01" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(862, 191.133)
+scale = Vector2(6.44, 6.53336)
+texture = ExtResource("5_6wigs")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 101.0
+offset_right = 1583.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2xnc5")
+theme_override_font_sizes/font_size = 20
+text = "Olá, viajante destemido! Eu sou Vina, o
+ herói que irá guiá-lo nesta jornada épica
+ para salvar nosso mundo das garras do
+ vilão Mordrax. Está pronto para se
+ tornar parte desta aventura e ajudar a 
+salvar nosso mundo? Venha comigo e vamos
+ triunfar sobre as trevas, lado a lado!"
+
+[connection signal="pressed" from="controls/proximapag" to="." method="_on_start_btn_pressed"]
